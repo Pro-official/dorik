@@ -4,18 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div id="shortner">
-      <input type="url" id="url-short" />
-      <button onclick="urlGet()">Short The URL</button>
-    </div>
+    <section class="container">
+      <div id="shortner">
+        <div>
+          <h3 class="instruction">Write Long URL:</h3>
+          <input
+            placeholder="Type long URL here"
+            class="input-field"
+            type="url"
+            id="url-short"
+          />
+          <button class="submit" onclick="urlGet()">Generate Short URL</button>
+        </div>
+        <div class="link-generation">
+          <h3>Your Short URl is:</h3>
+          <button id="copy"><h3>Copy</h3></button>
+        </div>
+      </div>
 
-    <div id="longer">
-      <input type="url" id="url-long" />
-      <button onclick="urlSet()">Short The URL</button>
-    </div>
+      <div id="longer">
+        <div>
+          <h3 class="instruction">Write Long URL:</h3>
+          <input
+            placeholder="Type short URL here"
+            class="input-field"
+            type="url"
+            id="url-long"
+          />
+          <button class="submit" onclick="urlSet()">Retrieve Long URL</button>
+        </div>
+        <div class="link-generation">
+          <h3>Your Original URl is:</h3>
+          <button id="copy"><h3>Copy</h3></button>
+        </div>
+      </div>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>

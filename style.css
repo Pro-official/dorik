@@ -1,0 +1,47 @@
+.container {
+  max-width: 50%;
+  margin: 10rem auto;
+}
+
+#longer {
+  margin-top: 60px;
+}
+
+.instruction {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1px;
+}
+
+.input-field {
+  height: 2rem;
+  width: 250px;
+  border: 2 px solid red;
+}
+
+.input-field[type="url"]:focus {
+  border: #28c281ff;
+}
+
+.submit {
+  margin-left: 10px;
+  padding: 12px;
+  background-color: #28c281ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+}
+
+#copy {
+  margin-left: 8px;
+  color: blue;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.link-generation {
+  display: flex;
+  align-items: center;
+}
